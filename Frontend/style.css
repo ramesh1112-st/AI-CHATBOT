@@ -1,0 +1,141 @@
+/* =========================
+   GENERAL PAGE STYLING
+========================= */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* =========================
+   CHAT CONTAINER
+========================= */
+.chat-container {
+    width: 600px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* =========================
+   CHAT DISPLAY AREA
+========================= */
+#chat-box {
+    height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   USER MESSAGE
+========================= */
+.user {
+    color: blue;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* =========================
+   AI MESSAGE
+========================= */
+.bot {
+    color: green;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* =========================
+   INPUT SECTION
+========================= */
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+/* Message Input */
+.input-area input {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Send Button */
+.input-area button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* =========================
+   THEME TOGGLE BUTTON
+========================= */
+#theme-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* ==================================================
+                    DARK THEME
+================================================== */
+
+/* Body */
+body.dark-theme {
+    background-color: #121212;
+    color: white;
+}
+
+/* Chat Container */
+body.dark-theme .chat-container {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* Chat Box */
+body.dark-theme #chat-box {
+    border: 1px solid #444;
+}
+
+/* User Messages */
+body.dark-theme .user {
+    color: lightblue;
+}
+
+/* AI Messages */
+body.dark-theme .bot {
+    color: #d7e2d7;
+}
+
+/* Input Field */
+body.dark-theme .input-area input {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+/* Placeholder Text */
+body.dark-theme .input-area input::placeholder {
+    color: #bbb;
+}
+
+/* Send Button */
+body.dark-theme .input-area button {
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Theme Toggle Button */
+body.dark-theme #theme-toggle {
+    background-color: #333;
+    color: white;
+}
